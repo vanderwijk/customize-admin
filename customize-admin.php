@@ -3,7 +3,7 @@
 Plugin Name: Customize Admin
 Plugin URI: https://vanderwijk.com/wordpress/wordpress-customize-admin-plugin/
 Description: This plugin allows you to customize the appearance and branding of the WordPress admin interface.
-Version: 1.7.7
+Version: 1.7.9
 Author: Johan van der Wijk
 Author URI: https://www.vanderwijk.com
 Text Domain: customize-admin-plugin
