@@ -4,8 +4,8 @@ Author URI: https://www.vanderwijk.com/
 Donate link: http://www.vanderwijk.com/wordpress/support/
 Tags: custom, admin, customize, logo, login, dashboard, css, meta
 Requires at least: 3.5
-Tested up to: 5.7
-Stable tag: 1.7.9
+Tested up to: 5.8
+Stable tag: 1.8.0
 
 With this plugin you can use customize the appearance of the WordPress login page and dashboard.
 
@@ -42,6 +42,9 @@ I also am not aware of any other plugins that allow you to specify a clickthroug
 Finally, this plugin is ready to be localized. All you have to do is to use the POT file for translating.
 
 == Changelog ==
+
+= 1.8.0 =
+WordPress v5.8 compatibility tested.
 
 = 1.7.5 =
 Title attribute revoved from logo on login page because login_headertitle is deprecated since version 5.2.0.
