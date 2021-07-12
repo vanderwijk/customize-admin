@@ -5,7 +5,7 @@ Donate link: http://www.vanderwijk.com/wordpress/support/
 Tags: custom, admin, customize, logo, login, dashboard, css, meta
 Requires at least: 3.5
 Tested up to: 5.8
-Stable tag: 1.8.0
+Stable tag: 1.8.1
 
 With this plugin you can use customize the appearance of the WordPress login page and dashboard.
 
