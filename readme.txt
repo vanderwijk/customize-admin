@@ -15,11 +15,11 @@ Customize Admin is a powerful WordPress plugin that puts you in control of your 
 
 Key Features:
 
-Personalized Login Screen: Easily upload your custom image or logo to the login screen and define the link associated with the logo. Take your brand identity to the forefront and leave a lasting impression on your visitors from the very first interaction.
+**Personalized Login Screen:** Easily upload your custom image or logo to the login screen and define the link associated with the logo. Take your brand identity to the forefront and leave a lasting impression on your visitors from the very first interaction.
 
-Streamlined HTML: Trim down and fine-tune your website's HTML code by selectively removing meta tags from the head section. Enjoy better control over your site's code and optimize it for improved performance and SEO.
+**Streamlined HTML:** Trim down and fine-tune your website's HTML source code by selectively removing meta tags from the head section. Enjoy better control over your site's code and optimize it for improved performance and SEO.
 
-Widget Management: Take charge of your dashboard widgets! Customize Admin enables you to disable selected widgets, allowing you to declutter and streamline your WordPress dashboard effortlessly.
+**Dashboard Widget Management:** Take charge of your dashboard widgets! Customize Admin enables you to disable selected widgets, allowing you to declutter and streamline your WordPress dashboard effortlessly.
 
 Want to see the magic of Customize Admin in action? Check out the [plugin homepage](http://www.vanderwijk.com/wordpress/wordpress-customize-admin-plugin/) for more information and an enlightening screencast video that showcases the plugin's capabilities.
 
