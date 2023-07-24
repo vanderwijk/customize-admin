@@ -4,18 +4,24 @@ Author URI: https://www.vanderwijk.com/
 Donate link: http://www.vanderwijk.com/wordpress/support/
 Tags: custom, admin, customize, logo, login, dashboard, css, meta
 Requires at least: 3.5
-Tested up to: 6.2
-Stable tag: 1.8.4
+Tested up to: 6.3
+Stable tag: 1.9.0
 
-With this plugin you can use customize the appearance of the WordPress login page and dashboard.
+With this plugin you can use customize the appearance of the WordPress login page, dashboard and head section tags.
 
 == Description ==
 
-With this plugin you can use customize the appearance of the WordPress login page and dashboard. You can upload a custom image for the login screen and specify the link attached to the logo. By default you are redirected to the homepage of your site.
+Customize Admin is a powerful WordPress plugin that puts you in control of your website's login page and dashboard layout. With its intuitive features, you can effortlessly tailor the look and feel of your WordPress login page and dashboard, creating a seamless and branded experience for your users.
 
-You can find more information about this plugin and a screencast video which shows the plugin in action on the [plugin homepage](http://www.vanderwijk.com/wordpress/wordpress-customize-admin-plugin/).
+Key Features:
 
-The Customize Admin plugin also allows you to disable selected dashboard widgets and it can also remove the WordPress meta generator tag from the head section in your website's html code.
+Personalized Login Screen: Easily upload your custom image or logo to the login screen and define the link associated with the logo. Take your brand identity to the forefront and leave a lasting impression on your visitors from the very first interaction.
+
+Streamlined HTML: Trim down and fine-tune your website's HTML code by selectively removing meta tags from the head section. Enjoy better control over your site's code and optimize it for improved performance and SEO.
+
+Widget Management: Take charge of your dashboard widgets! Customize Admin enables you to disable selected widgets, allowing you to declutter and streamline your WordPress dashboard effortlessly.
+
+Want to see the magic of Customize Admin in action? Check out the [plugin homepage](http://www.vanderwijk.com/wordpress/wordpress-customize-admin-plugin/) for more information and an enlightening screencast video that showcases the plugin's capabilities.
 
 == Screenshots ==
 
@@ -43,6 +49,9 @@ Finally, this plugin is ready to be localized. All you have to do is to use the 
 
 == Changelog ==
 
+= 1.9.0 =
+WordPress v6.3 compatibility tested. Cleaned up options page.
+
 = 1.8.2 =
 WordPress v6.0 compatibility tested.
 
@@ -56,7 +65,7 @@ Title attribute revoved from logo on login page because login_headertitle is dep
 Changed the default css for the logo image from `background-size: auto auto` to `background-size: contain`
 
 = 1.7.3 =
-Fixed a conflict with the theme customizer, thank you [Freddy Chac�n](https://twitter.com/andandoenlabici/) for reporting this.
+Fixed a conflict with the theme customizer, thank you Freddy for reporting this.
 
 = 1.7.2 =
 Added sanitize_hex_color to color picker field to prevent logged-in users from saving anything else than a HEX color value. Thanks to Dan at [Wordfence](https://www.wordfence.com/) for alerting me to this potential issue.
