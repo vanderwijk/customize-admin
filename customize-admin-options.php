@@ -88,7 +88,7 @@ function ca_settings_page () { ?>
 					<th scope="row"><?php _e ( 'Login Page CSS', 'customize-admin-plugin' ); ?></th>
 					<td>
 						<textarea id="ca_custom_css" name="ca_custom_css" cols="70" rows="5"><?php echo esc_html( get_option ( 'ca_custom_css' ) ); ?></textarea>
-						<p class="description"><?php _e ( 'Add your own styles to the WordPress dashboard.', 'customize-admin-plugin' ); ?></p>
+						<p class="description"><?php _e ( 'Add your own styles to the WordPress Login Page.', 'customize-admin-plugin' ); ?></p>
 					</td>
 				</tr>
 				<tr valign="top">
