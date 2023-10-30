@@ -1,11 +1,11 @@
 === Customize Admin ===
 Contributors: vanderwijk
-Author URI: https://www.vanderwijk.com/
-Donate link: http://www.vanderwijk.com/wordpress/support/
+Author URI: https://vanderwijk.com/
+Donate link: https://www.paypal.me/vanderwijk
 Tags: custom, admin, customize, logo, login, dashboard, css, meta
 Requires at least: 3.5
-Tested up to: 6.3
-Stable tag: 1.9.0
+Tested up to: 6.4
+Stable tag: 1.9.1
 
 With this plugin you can use customize the appearance of the WordPress login page, dashboard and head section tags.
 
@@ -48,6 +48,9 @@ I also am not aware of any other plugins that allow you to specify a clickthroug
 Finally, this plugin is ready to be localized. All you have to do is to use the POT file for translating.
 
 == Changelog ==
+
+= 1.9.1 =
+WordPress v6.4 compatibility tested.
 
 = 1.9.0 =
 WordPress v6.3 compatibility tested. Cleaned up options page.
