@@ -2,10 +2,12 @@
 Contributors: vanderwijk
 Author URI: https://vanderwijk.com/
 Donate link: https://www.paypal.me/vanderwijk
-Tags: custom, admin, customize, logo, login, dashboard, css, meta
+Tags: custom, logo, login, dashboard, css
 Requires at least: 3.5
-Tested up to: 6.5
-Stable tag: 1.9.2
+Tested up to: 6.6
+Stable tag: 1.9.3
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 With this plugin you can use customize the appearance of the WordPress login page, dashboard and head section tags.
 
