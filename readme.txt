@@ -51,6 +51,9 @@ Finally, this plugin is ready to be localized. All you have to do is to use the 
 
 == Changelog ==
 
+= 1.9.3 =
+WordPress v6.6 compatibility tested.
+
 = 1.9.2 =
 WordPress v6.5 compatibility tested.
 
