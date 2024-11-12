@@ -3,13 +3,14 @@
 Plugin Name: Customize Admin
 Plugin URI: https://vanderwijk.com/wordpress/wordpress-customize-admin-plugin/
 Description: This plugin allows you to customize the appearance and branding of the WordPress admin interface.
-Version: 1.9.3
+Version: 1.9.4
 Author: Johan van der Wijk
 Author URI: https://vanderwijk.com
-Text Domain: customize-admin-plugin
+Text Domain: customize-admin
 Domain Path: /languages
+License: GPL2 or later
 
-Release notes: WP 6.6 compatibility tested.
+Release notes: WP 6.7 compatibility tested.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -30,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) die ( 'Error!' );
 
 // Load the required files needed for the plugin to run in the proper order and add needed functions to the required hooks.
 function ca_plugin_init () {
-	load_plugin_textdomain ( 'customize-admin-plugin', false, 'customize-admin/languages' );
+	load_plugin_textdomain ( 'customize-admin', false, 'customize-admin/languages' );
 }
 add_action ( 'plugins_loaded', 'ca_plugin_init' );
 
@@ -39,12 +40,12 @@ function ca_enqueue_scripts () {
 		return;
 	}
 
-	wp_register_script ( 'ca-color-picker', WP_PLUGIN_URL . '/customize-admin/js/color-picker.js', array ( 'jquery' ) );
+	wp_register_script ( 'ca-color-picker', WP_PLUGIN_URL . '/customize-admin/js/color-picker.js', array ( 'jquery' ), '1.9.4', true );
 	wp_enqueue_script ( 'ca-color-picker' );
 	wp_enqueue_script ( 'wp-color-picker' );
 
 	wp_enqueue_media  ();
-	wp_register_script ( 'ca-media-upload', WP_PLUGIN_URL . '/customize-admin/js/media-upload.js', array ( 'jquery' ) );
+	wp_register_script ( 'ca-media-upload', WP_PLUGIN_URL . '/customize-admin/js/media-upload.js', array ( 'jquery' ), '1.9.4', true );
 	wp_enqueue_script ( 'ca-media-upload' );
 
 	// Enqueue code editor and settings for manipulating CSS
@@ -88,7 +89,7 @@ function ca_logo_file () {
 	if ( get_option ( 'ca_logo_file' ) != '' ) {
 		echo '<style>.login h1 a { background-image: url("' . esc_url ( get_option ( 'ca_logo_file' ) ) . '"); background-size: contain; width: 320px; }</style>';
 	} else {
-		echo '<style>.login h1 a { background-image: url("' . plugins_url( 'vanderwijk.png' , __FILE__ ) . '"); background-size: contain; width: 320px; }</style>';
+		echo '<style>.login h1 a { background-image: url("' . esc_url ( plugins_url ( 'vanderwijk.png' , __FILE__ ) ) . '"); background-size: contain; width: 320px; }</style>';
 	}
 }
 
@@ -102,7 +103,7 @@ function ca_login_background_color () {
 // CSS for custom CSS
 function ca_custom_css () {
 	if ( get_option ( 'ca_custom_css' ) != '' ) {
-		echo '<style>'. strip_tags( get_option ( 'ca_custom_css' ) ) . '</style>';
+		echo '<style>' . esc_html ( wp_strip_all_tags ( get_option ( 'ca_custom_css' ) ) ) . '</style>';
 	}
 }
 

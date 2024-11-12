@@ -52,31 +52,31 @@ function ca_sanitize_hex_color ( $color ) {
 
 function ca_settings_page () { ?>
 	<div class="wrap">
-		<h2><?php _e ( 'Customize Admin Options', 'customize-admin-plugin' ); ?></h2>
+		<h2><?php esc_attr_e ( 'Customize Admin Options', 'customize-admin' ); ?></h2>
 		<form method="post" action="options.php">
 			<?php settings_fields ( 'customize-admin-settings-group' ); ?>
 			<table class="form-table">
 				<tr valign="top">
-					<th scope="row"><?php _e ( 'Login Page Logo Link', 'customize-admin-plugin' ); ?></th>
+					<th scope="row"><?php esc_attr_e ( 'Login Page Logo Link', 'customize-admin' ); ?></th>
 					<td>
 						<label for="ca_logo_url">
 							<input type="text" id="ca_logo_url" name="ca_logo_url" value="<?php echo esc_url ( get_option ( 'ca_logo_url' ) ); ?>" />
-							<p class="description"><?php _e ( 'If not specified, clicking on the logo will return you to the homepage.', 'customize-admin-plugin' ); ?></p>
+							<p class="description"><?php esc_attr_e ( 'If not specified, clicking on the logo will return you to the homepage.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php _e ( 'Login Page Logo Image', 'customize-admin-plugin' ); ?></th>
+					<th scope="row"><?php esc_attr_e ( 'Login Page Logo Image', 'customize-admin' ); ?></th>
 					<td>
 						<label for="upload_image">
 							<input id="upload_image" type="text" size="36" name="ca_logo_file" value="<?php echo esc_url ( get_option ( 'ca_logo_file' ) ); ?>" />
-							<input id="upload_image_button" type="button" value="<?php _e ( 'Choose Image', 'customize-admin-plugin' ); ?>" class="button" />
-							<p class="description"><?php _e ( 'Enter a URL or upload logo image. Maximum height: 70px, width: 310px.', 'customize-admin-plugin' ); ?></p>
+							<input id="upload_image_button" type="button" value="<?php esc_attr_e ( 'Choose Image', 'customize-admin' ); ?>" class="button" />
+							<p class="description"><?php esc_attr_e ( 'Enter a URL or upload logo image. Maximum height: 70px, width: 310px.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php _e ( 'Login Page Background Color', 'customize-admin-plugin' ); ?></th>
+					<th scope="row"><?php esc_attr_e ( 'Login Page Background Color', 'customize-admin' ); ?></th>
 					<td>
 						<label for="ca_login_background_color">
 							<input type="text" id="ca_login_background_color" class="color-picker" name="ca_login_background_color" value="<?php echo esc_html( get_option ( 'ca_login_background_color' ) ); ?>" />
@@ -85,19 +85,19 @@ function ca_settings_page () { ?>
 					</td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php _e ( 'Login Page CSS', 'customize-admin-plugin' ); ?></th>
+					<th scope="row"><?php esc_attr_e ( 'Login Page CSS', 'customize-admin' ); ?></th>
 					<td>
 						<textarea id="ca_custom_css" name="ca_custom_css" cols="70" rows="5"><?php echo esc_html( get_option ( 'ca_custom_css' ) ); ?></textarea>
-						<p class="description"><?php _e ( 'Add your own styles to the WordPress Login Page.', 'customize-admin-plugin' ); ?></p>
+						<p class="description"><?php esc_attr_e ( 'Add your own styles to the WordPress Login Page.', 'customize-admin' ); ?></p>
 					</td>
 				</tr>
 				<tr valign="top">
-					<th><?php _e ( 'Remove metatags from the &lt;head&gt; section', 'customize-admin-plugin' ); ?></th>
+					<th><?php esc_attr_e ( 'Remove metatags from the &lt;head&gt; section', 'customize-admin' ); ?></th>
 					<td>
 						<label for="ca_remove_meta_generator">
 							<input id="ca_remove_meta_generator" type="checkbox" name="ca_remove_meta_generator" value="1" <?php checked ( '1', get_option ( 'ca_remove_meta_generator' ) ); ?> />
-							<?php _e ( 'Remove Generator Meta Tag', 'customize-admin-plugin' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the generator meta tag from the html source.', 'customize-admin-plugin' ); ?></p>
+							<?php esc_attr_e ( 'Remove Generator Meta Tag', 'customize-admin' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the generator meta tag from the html source.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -106,8 +106,8 @@ function ca_settings_page () { ?>
 					<td>
 						<label for="ca_remove_meta_rsd">
 							<input id="ca_remove_meta_rsd" type="checkbox" name="ca_remove_meta_rsd" value="1" <?php checked ( '1', get_option ( 'ca_remove_meta_rsd' ) ); ?> />
-							<?php _e ( 'Remove RSD Meta Tag', 'customize-admin-plugin' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the RSD meta tag from the html source.', 'customize-admin-plugin' ); ?></p>
+							<?php esc_attr_e ( 'Remove RSD Meta Tag', 'customize-admin' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the RSD meta tag from the html source.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -116,8 +116,8 @@ function ca_settings_page () { ?>
 					<td>
 						<label for="ca_remove_meta_wlw">
 							<input id="ca_remove_meta_wlw" type="checkbox" name="ca_remove_meta_wlw" value="1" <?php checked ( '1', get_option ( 'ca_remove_meta_wlw' ) ); ?> />
-							<?php _e ( 'Remove WLW Meta Tag', 'customize-admin-plugin' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the WLW meta tag from the html source. It seems that this tag is no longer included in WP 6.3?', 'customize-admin-plugin' ); ?></p>
+							<?php esc_attr_e ( 'Remove WLW Meta Tag', 'customize-admin' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the WLW meta tag from the html source. It seems that this tag is no longer included in WP 6.3?', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -126,17 +126,17 @@ function ca_settings_page () { ?>
 					<td>
 						<label for="ca_remove_rss_links">
 							<input id="ca_remove_rss_links" type="checkbox" name="ca_remove_rss_links" value="1" <?php checked ( '1', get_option ( 'ca_remove_rss_links' ) ); ?> />
-							<?php _e ( 'Remove RSS feed links', 'customize-admin-plugin' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the RSS feed link from the html source.', 'customize-admin-plugin' ); ?></p>
+							<?php esc_attr_e ( 'Remove RSS feed links', 'customize-admin' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the RSS feed link from the html source.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php _e ( 'Remove Dashboard Widgets', 'customize-admin-plugin' ); ?></th>
+					<th scope="row"><?php esc_attr_e ( 'Remove Dashboard Widgets', 'customize-admin' ); ?></th>
 					<td>
 						<label for="ca_remove_dashboard_site_health_status">
-							<input id="ca_remove_dashboard_site_health_status" type="checkbox" name="ca_remove_dashboard_site_health_status" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_site_health_status' ) ); ?> /> <?php _e ( 'Site Health Status' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the WordPress Site Health Status dashboard widget.', 'customize-admin-plugin' ); ?></p>
+							<input id="ca_remove_dashboard_site_health_status" type="checkbox" name="ca_remove_dashboard_site_health_status" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_site_health_status' ) ); ?> /> <?php esc_attr_e ( 'Site Health Status' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the WordPress Site Health Status dashboard widget.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -144,8 +144,8 @@ function ca_settings_page () { ?>
 					<th scope="row"></th>
 					<td>
 						<label for="ca_remove_dashboard_at_a_glance">
-							<input id="ca_remove_dashboard_at_a_glance" type="checkbox" name="ca_remove_dashboard_at_a_glance" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_at_a_glance' ) ); ?> /> <?php _e ( 'At a Glance' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the At a Glance dashboard widget.', 'customize-admin-plugin' ); ?></p>
+							<input id="ca_remove_dashboard_at_a_glance" type="checkbox" name="ca_remove_dashboard_at_a_glance" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_at_a_glance' ) ); ?> /> <?php esc_attr_e ( 'At a Glance' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the At a Glance dashboard widget.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -153,8 +153,8 @@ function ca_settings_page () { ?>
 					<th scope="row"></th>
 					<td>
 						<label for="ca_remove_dashboard_activity">
-							<input id="ca_remove_dashboard_activity" type="checkbox" name="ca_remove_dashboard_activity" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_activity' ) ); ?> /> <?php _e ( 'Activity' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the Activity dashboard widget.', 'customize-admin-plugin' ); ?></p>
+							<input id="ca_remove_dashboard_activity" type="checkbox" name="ca_remove_dashboard_activity" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_activity' ) ); ?> /> <?php esc_attr_e ( 'Activity' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the Activity dashboard widget.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -162,8 +162,8 @@ function ca_settings_page () { ?>
 					<th scope="row"></th>
 					<td>
 						<label for="ca_remove_dashboard_quick_press">
-							<input id="ca_remove_dashboard_quick_press" type="checkbox" name="ca_remove_dashboard_quick_press" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_quick_press' ) ); ?> /> <?php _e ( 'Quick Draft' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the Quick Draft dashboard widget.', 'customize-admin-plugin' ); ?></p>
+							<input id="ca_remove_dashboard_quick_press" type="checkbox" name="ca_remove_dashboard_quick_press" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_quick_press' ) ); ?> /> <?php esc_attr_e ( 'Quick Draft' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the Quick Draft dashboard widget.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
@@ -171,14 +171,14 @@ function ca_settings_page () { ?>
 					<th scope="row"></th>
 					<td>
 						<label for="ca_remove_dashboard_wordpress_news">
-							<input id="ca_remove_dashboard_wordpress_news" type="checkbox" name="ca_remove_dashboard_wordpress_news" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_wordpress_news' ) ); ?> /> <?php _e ( 'WordPress Events and News' ); ?>
-							<p class="description"><?php _e ( 'Selecting this option removes the WordPress Events and News dashboard widget.', 'customize-admin-plugin' ); ?></p>
+							<input id="ca_remove_dashboard_wordpress_news" type="checkbox" name="ca_remove_dashboard_wordpress_news" value="1" <?php checked ( '1', get_option ( 'ca_remove_dashboard_wordpress_news' ) ); ?> /> <?php esc_attr_e ( 'WordPress Events and News' ); ?>
+							<p class="description"><?php esc_attr_e ( 'Selecting this option removes the WordPress Events and News dashboard widget.', 'customize-admin' ); ?></p>
 						</label>
 					</td>
 				</tr>
 			</table>
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php _e ( 'Save Changes', 'customize-admin-plugin' ); ?>" />
+				<input type="submit" class="button-primary" value="<?php esc_attr_e ( 'Save Changes', 'customize-admin' ); ?>" />
 			</p>
 		</form>
 	</div>

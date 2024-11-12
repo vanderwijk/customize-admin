@@ -4,8 +4,8 @@ Author URI: https://vanderwijk.com/
 Donate link: https://www.paypal.me/vanderwijk
 Tags: custom, logo, login, dashboard, css
 Requires at least: 3.5
-Tested up to: 6.6
-Stable tag: 1.9.3
+Tested up to: 6.7
+Stable tag: 1.9.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,9 @@ I also am not aware of any other plugins that allow you to specify a clickthroug
 Finally, this plugin is ready to be localized. All you have to do is to use the POT file for translating.
 
 == Changelog ==
+
+= 1.9.4 =
+WordPress v6.7 compatibility tested.
 
 = 1.9.3 =
 WordPress v6.6 compatibility tested.
