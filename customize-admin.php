@@ -87,9 +87,9 @@ function ca_logo_url($url) {
 // CSS for custom logo on the login screen
 function ca_logo_file () {
 	if ( get_option ( 'ca_logo_file' ) != '' ) {
-		echo '<style>.login h1 a { background-image: url("' . esc_url ( get_option ( 'ca_logo_file' ) ) . '"); background-size: contain; width: 320px; }</style>';
+		echo '<style>.login h1 a { background-image: url("' . esc_url ( get_option ( 'ca_logo_file' ) ) . '")!important; background-size: contain; width: 320px; }</style>';
 	} else {
-		echo '<style>.login h1 a { background-image: url("' . esc_url ( plugins_url ( 'vanderwijk.png' , __FILE__ ) ) . '"); background-size: contain; width: 320px; }</style>';
+		echo '<style>.login h1 a { background-image: url("' . esc_url ( plugins_url ( 'vanderwijk.png' , __FILE__ ) ) . '")!important; background-size: contain; width: 320px; }</style>';
 	}
 }
 
