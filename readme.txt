@@ -5,7 +5,7 @@ Donate link: https://www.paypal.me/vanderwijk
 Tags: custom, logo, login, dashboard, css
 Requires at least: 3.5
 Tested up to: 6.8
-Stable tag: 1.9.5
+Stable tag: 1.9.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,7 +51,7 @@ Finally, this plugin is ready to be localized. All you have to do is to use the 
 
 == Changelog ==
 
-= 1.9.5 =
+= 1.9.6 =
 WordPress v6.8 compatibility tested.
 
 = 1.9.4 =
