@@ -5,7 +5,7 @@ Donate link: https://www.paypal.me/vanderwijk
 Tags: custom, logo, login, dashboard, css
 Requires at least: 3.5
 Tested up to: 6.8
-Stable tag: 1.9.4
+Stable tag: 1.9.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
